@@ -16,7 +16,7 @@ public class JavaMoney implements Comparable<JavaMoney> {
     return new JavaMoney(this.amount + other.amount);
   }
 
-  @Override
+  @Override // 앞에게 두번째보다 크면 +
   public int compareTo(@NotNull JavaMoney o) {
     return Long.compare(this.amount, o.amount);
   }
